@@ -1,5 +1,10 @@
 let getScoreLetter = (score) => {
 
+    switch (score) {
+        case 70..80: return 'B';
+    }
+
+
     if (score >= 0 && score <= 64) {
         return 'F';
     } else if (score >= 65 && score <= 69) {
