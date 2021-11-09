@@ -24,4 +24,3 @@ const advanceValidPass = pass => {
 }
 
 
-console.log(advanceValidPass('wodfsfdFsw'));
