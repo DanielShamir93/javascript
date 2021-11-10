@@ -2,7 +2,7 @@
 const arr1 = new Array(100).fill(0, 0, 99);
 
 // 2
-const arr2 =  Array.from( new Array(100), (val, index) => {
+const arr2 =  Array.from( { length: 100 }, (_, index) => {
     return index + 1;
 })
 

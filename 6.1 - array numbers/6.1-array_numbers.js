@@ -18,12 +18,12 @@ const arrayLength = arr => {
 const arraySum = arr => {
     return arr.reduce( (prevVal, currVal) => {
         return prevVal + currVal;
-    });
+    })
 }
 
 // 4
 const arrayMulti = arr => {
     return arr.reduce( (prevVal, currVal) => {
         return prevVal * currVal;
-    });
+    })
 }

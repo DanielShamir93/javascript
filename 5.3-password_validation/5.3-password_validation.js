@@ -17,10 +17,6 @@ const validPass3 = pass => {
     return 'Weak';
 }
 
-
-
 const advanceValidPass = pass => {
     return pass.length >= 7 && pass !== pass.toLowerCase() ? 'Very Strong' : pass.length >= 7 ? 'Strong' : 'Weak';
 }
-
-
