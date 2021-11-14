@@ -1,7 +1,7 @@
 const food = ["Noodle", "Pasta", "Ice-cream", "Meat", "Cucumber", "Olives"];
 const food1 = ["Fries", "Ice-cream", "Pizza", "Olives", "Hamburgers"];
 
-const distinctArr = (value, index, categoryArray) => categoryArray.indexOf(value) === index;
+const distinctArr = (value, index, arr) => arr.indexOf(value) === index;
 
 const compareArrays = (food, food1) => {
     let res = [];
