@@ -32,7 +32,7 @@ bookUtil.setTranslation = (book, language, translator) => {
     book.translation = {
         language,
         translator
-    };
+    }
 }
 
 // 7

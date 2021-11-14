@@ -4,11 +4,12 @@ const letterAsAKey = arr => {
     str = arr.join('');
     obj = {};
     for (let i = 0; i < str.length ; i++) {
-        if (obj.hasOwnProperty(str[i])) {
-            obj[str[i]]++;
+        let prop = str[i].toLowerCase();
+        if (obj.hasOwnProperty(prop)) {
+            obj[prop]++;
         }
-        else if (str[i] !== ' ') {
-            obj[str[i]] = 1;
+        else if (prop !== ' ') {
+            obj[prop] = 1;
         }
     }
     return obj;
