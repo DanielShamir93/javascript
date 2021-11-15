@@ -13,7 +13,6 @@ const doubleValues = (intArr, doubleFunc) => {
 
 const onlyEvenValues = (arr) => {
     let resArr = [];
-
     arr.forEach((num) => {
         if (num % 2 === 0) {
             resArr.push(num);
@@ -55,11 +54,10 @@ const letterAsAKey = arr => {
             if (resObj.hasOwnProperty(prop)) {
                 resObj[prop]++;
             }
-            else if (prop !== ' ') {
+            else {
                 resObj[prop] = 1;
             }
         }
-        
     })
     return resObj;
 }
@@ -86,7 +84,6 @@ const shiftLetter = (str) => {
 
 // 7
 const swapCases = (subStr) => {
-    
     return subStr.split(' ')[0].toLowerCase() + ' ' + subStr.split(' ')[1].toUpperCase();
 }
 
