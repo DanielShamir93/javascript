@@ -38,6 +38,7 @@ const assignTeachersSubject = (id, subject) => {
     })
 }
 
+
 // assignTeachersSubject(1, 'computers');
 // console.log(school.teachers);
 
