@@ -64,10 +64,32 @@ const letterAsAKey = arr => {
 
 // console.log(letterAsAKey(["Hello", "Good Day", "Your Welcome", "hotdog", "hamburgers"]));
 
+
+
+
+
 // 5
 const capitalize = (str) => {
-    return str.toUpperCase();
+    const lower = 'abcdefghijklmnopqrstuvwxyz';
+    const upper = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    let resStr = '';
+    Array.from(str).forEach((letter) => {
+        if (letter.toLowerCase() !== letter.toUpperCase()) {
+            resStr += upper[lower.indexOf(letter)];
+        } else {
+            resStr += letter;
+        }
+    });
+    return resStr;
 }
+
+console.log(capitalize('wheee!! im capitalized'));
+
+
+
+
+
+
 
 // 6
 const shiftDownLetter = (letter) => 
@@ -91,4 +113,4 @@ const swapCase = (str) => {
     return str.replace(/[A-Za-z]+\s+[A-Za-z]+/g, swapCases)
 }
 
-console.log(swapCase('matti shaked svetlana omar fida ernest'));
+// console.log(swapCase('matti shaked svetlana omar fida ernest'));
