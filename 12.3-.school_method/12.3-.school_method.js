@@ -12,20 +12,20 @@ const findPerson = (type, id) => {
 // 2
 const assignStudent = (id, subject) => {
     const student = findPerson('students', id);
-    school.teachers.forEach((teacher => {
+    for (let teacher of school.teachers) {
         if (teacher.subjects.includes(subject)) {
             if (teacher.capacityLeft > 0) {
                 teacher.students.push(student);
                 teacher.capacityLeft--;
-                console.log(teacher);
             } else {
                 console.log('Sorry, no available teachers left');
             }
         }
-    }));
+    }
 }
 
 // assignStudent(12, 'physics');
+
 
 // 3 
 const assignTeachersSubject = (id, subject) => {
@@ -37,6 +37,7 @@ const assignTeachersSubject = (id, subject) => {
         }
     })
 }
+
 
 
 // assignTeachersSubject(1, 'computers');

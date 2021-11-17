@@ -6,7 +6,7 @@ const max = (...numbers) => {
 }
 
 
-console.log(max(1,2,3,4));
+// console.log(max(1,2,3,4));
 
 
 // 2
@@ -20,7 +20,7 @@ const sumOfEven = (...numbers) => {
     }, 0);
 }
 
-console.log(sumOfEven(4,2,3,4));
+// console.log(sumOfEven(4,2,3,4));
 
 
 // 3 
@@ -30,4 +30,4 @@ const average = (...numbers) => {
     }) / numbers.length;
 }
 
-console.log(average(1,2,3,4));
+// console.log(average(1,2,3,4));

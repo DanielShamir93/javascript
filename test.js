@@ -23,3 +23,6 @@ const be2Print2 = () => {console.log(2); return 2;}
 const be3Print3 = () => {console.log(3); return 3;}
 
 // console.log(beTruePrint2() || beTruePrint3());
+
+
+console.log('Ab' > 'a');
