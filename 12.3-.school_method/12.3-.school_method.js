@@ -17,6 +17,7 @@ const assignStudent = (id, subject) => {
             if (teacher.capacityLeft > 0) {
                 teacher.students.push(student);
                 teacher.capacityLeft--;
+                return;
             } else {
                 console.log('Sorry, no available teachers left');
             }
@@ -24,7 +25,10 @@ const assignStudent = (id, subject) => {
     }
 }
 
-// assignStudent(12, 'physics');
+
+assignStudent(12, 'physics');
+
+
 
 
 // 3 

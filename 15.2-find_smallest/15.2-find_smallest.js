@@ -8,12 +8,13 @@
 
 //3 self explained in section (1)
 
+
 // 4
 function findSmallest(a, b, c) {
-    if (b > a && c > a) {
+    if (b > c > a) {
         return a;
     } 
-    else if (a > b && c > b) {
+    else if (a > b > c) {
         return a;
     } else {
         return c;

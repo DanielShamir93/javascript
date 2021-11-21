@@ -31,7 +31,7 @@
 // };
 
 // console.log(obj.prop.getFullName());
-// let test = new obj.prop.getFullName();
+// let test = prop.getFullName();
 // console.log(test());
 
 // Block 3
@@ -41,6 +41,7 @@
 
 // function funcB() {
 //   let a = (b = 0);
+//   c = 3;
 //   console.log();
 //   a++;
 //   return a;
