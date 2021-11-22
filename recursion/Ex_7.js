@@ -18,14 +18,14 @@ const decodeString = (s) => {
         // Remove the next number
         s = s.replace(/\d+/, '');
         // Get into sub first parenthesis substring
-        let sub = getSubstringInFirstParenthesis(s);
+        let sub = getSubstringInOuterParenthesis(s);
         // Decode substring from first outer parenthesis + decode rest of s
         return decodeString(sub.slice(0, sub.length-1)).repeat(num) + decodeString(s.slice(sub.length + 1));
     } 
 }
 
 // Returns substring of the first parenthesis
-const getSubstringInFirstParenthesis = (s) => {
+const getSubstringInOuterParenthesis = (s) => {
     let openParenthesisCounter = 1;
     let sub = '';
     for (let i = 1; openParenthesisCounter > 0; i++) {
@@ -38,6 +38,8 @@ const getSubstringInFirstParenthesis = (s) => {
     }
     return sub;
 }
+
+
 
 const s1 = "3[a]2[bc]";
 const s2 = "3[a2[c]]";
