@@ -23,8 +23,15 @@
     console.log(select2);
 
     // 3
-    document.querySelectorAll('input').forEach((input) => {
-        console.log(input);
+    document.querySelectorAll('.text').forEach((input) => {
+        // console.log(input);
     })
+
+    const inputs = document.getElementsByTagName('input');
+    for (input of inputs) {
+        // console.log(input);
+    }
+
+
   </script>
 </html>
