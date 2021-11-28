@@ -16,7 +16,6 @@ document.addEventListener('paste', (e) => {
     validatePass();
 });
 
-
 document.addEventListener('keyup', (e) => {
 
     if (e.key === 'Backspace') {
