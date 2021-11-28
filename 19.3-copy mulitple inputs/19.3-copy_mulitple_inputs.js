@@ -13,29 +13,41 @@ document.addEventListener('paste', (e) => {
             liList[i].children[0].value = '';
         }
     }
+    validatePass();
+});
 
+
+document.addEventListener('keyup', (e) => {
+
+    if (e.key === 'Backspace') {
+        return;
+    }
+
+    switch (e.target.className) {
+        case 'input1':  document.querySelector('.input2').focus();
+                        break;
+        case 'input2':  document.querySelector('.input3').focus();
+                        break;
+        case 'input3':  document.querySelector('.input4').focus();
+                        break;
+        case 'input4':  document.querySelector('.input5').focus();
+                        break;
+        case 'input5':  document.querySelector('.input6').focus();
+                        break;
+    }
+
+    validatePass();
+});
+
+const validatePass = () => {
+    let liList = document.querySelector('.inputs-list').children;
     for(li of liList) {
         if (li.children[0].value.length !== 1) {
             return;
         }
     }
-
     document.querySelector('.verify').click();
-});
-
-
-// document.addEventListener('change', (e) => {
-//     const liList = document.querySelector('.inputs-list').children;
-
-//     for(li of liList) {
-//         if (li.children[0].length !== 1) {
-//             return;
-//         }
-//     }
-//     document.querySelector('.verify').click();
-// });
-
-
+}
 
 window.onload = () => {
     const liList = document.querySelector('.inputs-list').children;
