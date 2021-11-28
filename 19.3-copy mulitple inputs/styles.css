@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.title {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputs {
+    border: 1px solid black;
+    height: 100px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.inputs-list {
+    display: flex;
+    list-style: none;
+}
+
+.inputs-list li input{
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    text-align: center;
+}
