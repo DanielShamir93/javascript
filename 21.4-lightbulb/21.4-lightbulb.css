@@ -45,11 +45,11 @@
     height: 70px;
     border: 10px gray solid;
     position:absolute;
-    border-radius: 10px;
-    border-top: 8px orange solid;
+    border-radius: 5px;
+    border-top: 6px orange solid;
     border-bottom: transparent;
-    border-left: 4px gray solid;
-    border-right: 4px gray solid;
+    border-left: 3px gray solid;
+    border-right: 3px gray solid;
     bottom: 20px;
 }
 
@@ -60,6 +60,16 @@
     position: absolute;
     top: 170px;
     border-radius: 0 0 20px 20px;
+}
+
+.bulb-body::before {
+    content: '';
+    position: absolute;
+    width: 65px;
+    height: 5px;
+    background: #464D58;
+    top: 15px;
+    border-radius: 1px 1px;
 }
 
 .bulb-body::after {
