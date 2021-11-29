@@ -3,21 +3,22 @@ document.addEventListener('paste', (e) => {
     e.preventDefault();
 
     let clipboardData = e.clipboardData;
-    let pastedData = clipboardData.getData('Text');
-    let liList = document.querySelector('.inputs-list').children;
+    let pastedString = clipboardData.getData('text');
+    pasteInput(pastedString);
+    validatePass();
+});
+
+const pasteInput = (pastedString) => {
+    const liList = document.querySelector('.inputs-list').children;
 
     for (let i = 0; i < liList.length; i++) {
-        if (pastedData[i]) {
-            liList[i].children[0].value = pastedData[i];
+        if (pastedString[i]) {
+            liList[i].children[0].value = pastedString[i];
         } else {
             liList[i].children[0].value = '';
         }
     }
-    validatePass();
-});
-
-
-
+}
 
 document.addEventListener('input', (e) => {
 
@@ -37,7 +38,6 @@ document.addEventListener('input', (e) => {
         case 'input5':  document.querySelector('.input6').focus();
                         break;
     }
-
     validatePass();
 });
 
@@ -50,6 +50,22 @@ const validatePass = () => {
     }
     document.querySelector('.verify').click();
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 window.onload = () => {
     const liList = document.querySelector('.inputs-list').children;
