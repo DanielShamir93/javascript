@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    background: unset;
+}
+
+.bulb {
+    height: 200px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.bulb-head {
+    width: 120px;
+    height: 120px;
+    background: #F9E769;
+    border-radius: 50%;
+    position: relative;
+}
+
+.bulb-head-base {
+    position: absolute;
+    width: 70px;
+    height: 100px;
+    background: #F9E769;
+    border-radius: 50%;
+    top: 100px;
+    left: 25px;
+}
+
+
+.bulb-inner {
+    width: 25px;
+    height: 70px;
+    border: 10px gray solid;
+    position:absolute;
+    border-radius: 10px;
+    border-top: 8px orange solid;
+    border-bottom: transparent;
+    border-left: 4px gray solid;
+    border-right: 4px gray solid;
+    bottom: 20px;
+}
+
+.bulb-body {
+    width: 65px;
+    height: 40px;
+    background: #E2DFF2;
+    position: absolute;
+    top: 170px;
+    border-radius: 0 0 20px 20px;
+}
+
+.bulb-body::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    background: #464D58;
+    top: 30px;
+    left: 18px;
+    border-radius: 0 0 50% 50%;
+    z-index: -100;
+}
+
+.turnoff-light {
+    background: rgb(211, 211, 211);
+}
+
+.container-light-off {
+    background: rgb(29, 28, 28);
+}
