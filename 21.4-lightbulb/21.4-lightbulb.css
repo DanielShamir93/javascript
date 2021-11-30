@@ -85,6 +85,12 @@
     z-index: -100;
 }
 
+.turnoff-inner-light {
+    background: rgb(211, 211, 211);
+    border-top: 2px rgba(128, 128, 128, 0.3) solid;
+
+}
+
 .turnoff-light {
     background: rgb(211, 211, 211);
 }

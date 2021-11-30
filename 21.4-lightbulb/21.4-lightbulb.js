@@ -6,6 +6,6 @@ document.querySelector('.bulb').addEventListener('click', (e) => {
 
     bulbHead.classList.toggle('turnoff-light');
     bulbHeadBase.classList.toggle('turnoff-light');
-    bulbInner.classList.toggle('turnoff-light');
+    bulbInner.classList.toggle('turnoff-inner-light');
     containerLightOff.classList.toggle('container-light-off');
 });
