@@ -1,12 +1,9 @@
 document.querySelector('form').addEventListener('submit', (e) => {
     e.preventDefault();
-
     // Show dialog message
     document.querySelector('.dialog-box').style.display = 'flex';
-
     // Get form input
     const data = new FormData(document.querySelector('form'));
-    
     const dataMessage = getDataMessage(data)
     document.querySelector('.dialog-text').innerHTML = dataMessage;
     

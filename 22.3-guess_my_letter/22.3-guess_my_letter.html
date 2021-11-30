@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>22.3</title>
+    <script type="text/javascript" src="22.3-guess_my_letter.js" defer></script>
+    <style>
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        h1 {
+            text-transform: capitalize;
+        }
+
+        .letter-hidden {
+            border: 1px solid black;
+            padding: 5px 10px;
+        }
+
+        h3 {
+            color: red;
+        }
+
+        .guesses {
+            height: 20px;
+        }
+
+        .dialog-box {
+            height: 100px;
+            display: none;
+            position: absolute;
+            border: 2px solid black;
+            padding: 20px;
+            flex-flow: column wrap;
+            justify-content: space-between;
+            align-items: center;
+            background: white;
+        }
+
+        .message {
+            height: 20px;
+            white-space: nowrap;
+        }
+
+        .play-again {
+            height: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>welcome to guess my letter</h1>
+        <div class="letter-hidden">?</div>
+        <h3>please enter a valid letter</h3>
+        <h2>Keys guessed:</h2>
+        <p class="guesses"></p>
+    </div>
+    <div class="dialog-box">
+        <p class="message"></p>
+        <button class="message-button"></button>
+    </div>
+</body>
+</html>
