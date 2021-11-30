@@ -23,9 +23,10 @@ document.addEventListener('keypress', (e) => {
             document.querySelector('.message').style.color = 'green';
             document.querySelector('.message').innerHTML = `Well Done!!<br>You guessed right the letter: '${char}'`;
         } else if (!lettersGuessed.hasOwnProperty(char)) {
-            // A new letter was guessed
+            // A new wrong letter was guessed
             lettersGuessed[char] = true;
             document.querySelector('.guesses').textContent = Object.keys(lettersGuessed);
+            document.querySelector('h3').textContent = `'${char}' is a wrong guess`
         } else {
             // This letter was already guessed
             document.querySelector('.dialog-box').style.display = 'flex';
@@ -53,6 +54,7 @@ document.querySelector('.message-button').addEventListener('click', () => {
         lettersGuessed = {};
         guessedLetter = getRandomLetter();
         document.querySelector('.guesses').textContent = '';
+        document.querySelector('h3').textContent = 'Please enter a valid letter';
     }
 
     document.querySelector('.dialog-box').style.display = 'none';
