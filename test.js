@@ -8,11 +8,13 @@
 // var [e,f] = [1,2];
 // const [g,h] = [1,2];
 
-console.time('wow');
+// console.time('wow');
 
-let counter = 0;
-for (let i = 0; i < 10000000; i++) {
-  counter++;
-}
+// let counter = 0;
+// for (let i = 0; i < 10000000; i++) {
+//   counter++;
+// }
 
-console.timeEnd('wow')
+// console.timeEnd('wow')
+
+console.log(D === 13)
