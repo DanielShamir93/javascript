@@ -1,16 +1,16 @@
 
-const milSecElement = document.querySelector('.milsec');
-const secElement = document.querySelector('.sec');
-const minElement = document.querySelector('.min');
-let milSec = 0;
-let sec = 0;
-let min = 0;
+const stopwatch = (stopAtMinute) => {
+    const milSecElement = document.querySelector('.milsec');
+    const secElement = document.querySelector('.sec');
+    const minElement = document.querySelector('.min');
+    let milSec = 0;
+    let sec = 0;
+    let min = 0;
 
-const stopwatch = () => {
     setInterval(() => {
     
-        if (min === 60) {
-            clearInterval(stopwatch);W
+        if (min === stopAtMinute) {
+            clearInterval(stopwatch);
             return;
         }
     
@@ -34,4 +34,4 @@ const stopwatch = () => {
 } 
 
 
-stopwatch();
+stopwatch(60);
