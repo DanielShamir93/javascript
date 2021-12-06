@@ -16,7 +16,7 @@ const stopwatch = (stopAtMinute) => {
     
         milSec++;
     
-        if (milSec === 100) {
+        if (milSec === 1000) {
             sec++;
             milSec = 0;
     
@@ -26,7 +26,7 @@ const stopwatch = (stopAtMinute) => {
             }
         }
         
-        milSecElement.textContent = milSec < 10 ? `0${milSec}` : milSec;
+        milSecElement.textContent = milSec < 10 ? `00${milSec}` : milSec < 100 ? `0${milSec}` : milSec;
         secElement.textContent = sec < 10 ? `0${sec}` : sec;
         minElement.textContent = min < 10 ? `0${min}` : min;
     

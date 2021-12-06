@@ -8,9 +8,9 @@ function Pokemon(pokemonName, pokemonType, pokemonAttackList) {
 // const pokemon1 = new Pokemon('Matti', 'water', ['micAllaysOpen']);
 // const pokemon2 = new Pokemon('Ernest', 'fire', ['forkUsing']);
 // const pokemon3 = new Pokemon('Fida', 'wind', ['feed']);
-const pokemonArray = [  new Pokemon('Matti', 'water', ['mic allays open']),
+const pokemonArray = [  new Pokemon('Matti', 'water', ['mic allWays open']),
                         new Pokemon('Ernest', 'fire', ['fork using']),
-                        new Pokemon('Fida', 'wind', ['feed all'])];
+                        new Pokemon('Fida', 'wind', ['feed all with fairies'])];
 
 function callPokemon() {
     console.log(`I choose you ${this.name}`);
