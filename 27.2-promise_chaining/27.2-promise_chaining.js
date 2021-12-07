@@ -3,12 +3,14 @@ const array = ['Ernest', 'Matti', 'Fida', 'Svetlana', 'Omar', 'Shaked', 'Daniel'
 
 const makeAllCaps = (wordsArray) => {
     return new Promise((resolve, reject) => {
-        for (word of wordsArray) {
-            if (typeof word !== 'string') {
-                return reject(new Error('Array has non string item!'));
+        for (let i = 0; i < wordsArray.length ; i++) {
+            if (typeof wordsArray[i] !== 'string') {
+                return reject(new Error('Array has non string item: ' + word));
+            } else {
+                wordsArray[i] = wordsArray[i].toUpperCase();
             }
         }
-        return resolve({data: wordsArray});
+        resolve({data: wordsArray});
     });
 }
 
