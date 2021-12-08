@@ -1,0 +1,26 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+th {
+    text-align: center;
+    border: 1px solid black;
+    background: rgb(90, 139, 17);
+    color: white;
+}
+
+td {
+    text-align: center;
+    padding: 2vh 2vh;
+}
+
+tr:nth-child(odd) {
+    background: rgb(135, 195, 44);
+}
+
+tr:nth-child(even) {
+    background: greenyellow;
+}
