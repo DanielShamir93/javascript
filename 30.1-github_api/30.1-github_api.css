@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.user-interactive {
+    display: flex;
+    justify-content: center;
+    padding-top: 10vh;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    padding-top: 10vh;
+}
+
+.card {
+    width: 30vh;
+    height: 30vh;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column wrap;
+    margin: 3vh;
+}
+
+.avatar-image {
+    width: 100%;
+    border-radius: 20;
+}
+
+.details {
+    padding: 5vh 0;
+}
